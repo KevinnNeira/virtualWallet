@@ -1,18 +1,28 @@
 @import url(variables.css);
+
 @font-face {
     font-family: "Bold";
     src: url(/storage/font/SF-Pro-Text-Bold.otf);
 }
-
+@font-face {
+    font-family: "Heavy";
+    src: url(/storage/font/SF-Pro-Text-Heavy.otf);
+}
+@font-face {
+    font-family: "Light";
+    src: url(/storage/font/SF-Pro-Text-Light.otf);
+}
 body{
     background: var(--colorMain-);
 }
 #background{
     position: absolute;
     width: 100vw;
+    top: 0;
     height: 100vh;
 }
 .gridcontainerMain{
+    margin: 2vh;
     display: grid;
     border: 1px solid red;
 }
@@ -22,14 +32,32 @@ body{
     align-items: center;
     border: 1px solid red;
 }
+#icon{
+    width: 25px;
+}
 #title{
-    
+    margin: 2vh;
     font-family: "Bold", sans-serif;
     color: #FFFFFF;
 }
 #menu{
     position: absolute;
-    width: 7vw;
+    width:25px;
     right: 0;
 }
-
+.greeting{
+    display: flex;
+    flex-direction: column;
+}
+#welcome{
+    font-family: "Heavy", sans-serif;
+    font-size: 35px;
+    color: #FFFFFF;
+    margin-bottom: 1vw;
+}
+#message{
+    color: #FFFFFF;
+    font-family: "Light", sans-serif;
+    margin: 0;
+    font-size: 27px;
+}
