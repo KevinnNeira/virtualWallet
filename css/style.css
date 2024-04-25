@@ -1,1 +1,35 @@
 @import url(variables.css);
+@font-face {
+    font-family: "Bold";
+    src: url(/storage/font/SF-Pro-Text-Bold.otf);
+}
+
+body{
+    background: var(--colorMain-);
+}
+#background{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+.gridcontainerMain{
+    display: grid;
+    border: 1px solid red;
+}
+.header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+}
+#title{
+    
+    font-family: "Bold", sans-serif;
+    color: #FFFFFF;
+}
+#menu{
+    position: absolute;
+    width: 7vw;
+    right: 0;
+}
+
