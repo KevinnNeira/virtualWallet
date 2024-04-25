@@ -12,6 +12,10 @@
     font-family: "Light";
     src: url(/storage/font/SF-Pro-Text-Light.otf);
 }
+@font-face {
+    font-family: "Medium";
+    src: url(/storage/font/SF-Pro-Text-Medium.otf);
+}
 body{
     background: var(--colorMain-);
 }
@@ -60,4 +64,9 @@ body{
     font-family: "Light", sans-serif;
     margin: 0;
     font-size: 27px;
+}
+.datacontainer{
+    border: 1px solid purple;
+    display: grid;
+    grid-template-columns: 2;
 }
