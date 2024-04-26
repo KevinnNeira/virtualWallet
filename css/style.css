@@ -120,15 +120,14 @@ body{
     position: absolute;
     bottom: 0;
     overflow-y: auto;
-    height: 400px;
+    height: 380px;
     width: 100%;
-    
+    transition: 1s;
     background-color: #FFFFFF;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
 .scrollprofile:hover{
-    transition: 1s;
     height: 90vh;
 }
 #titlescroll{
@@ -167,7 +166,10 @@ body{
     gap: 10px;
 }
 .scrolltransactions{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 250px;
 }
 #titletransactions{
     font-family: "Bold", sans-serif;
@@ -246,4 +248,23 @@ body{
     font-size: 1.5vh;
     font-family: "Medium", sans-serif;
     color: var(--colorMain-);
+}
+.bar{
+    display: flex;
+    grid-column: 5;
+    position: absolute;
+    height: 10vh;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--colorMain-);
+    bottom: 0;
+    border: 1px solid yellow;
+}
+.article{
+    margin: 5.5VW;
+    width: 7vh;
+}
+.bar:hover{
+    filter: invert();
 }
