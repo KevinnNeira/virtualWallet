@@ -250,11 +250,11 @@ body{
     color: var(--colorMain-);
 }
 .bar{
-    display: flex;
-    grid-column: 5;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
     position: absolute;
     height: 10vh;
-    width: 100%;
+    width: 100vw;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: var(--colorMain-);
@@ -263,8 +263,5 @@ body{
 }
 .article{
     margin: 5.5VW;
-    width: 7vh;
-}
-.bar:hover{
-    filter: invert();
+    width: 5vh;
 }
