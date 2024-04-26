@@ -28,7 +28,6 @@ body{
 .gridcontainerMain{
     margin: 2vh;
     display: grid;
-    border: 1px solid red;
     overflow-y: auto;
 }
 .header{
@@ -36,7 +35,6 @@ body{
     position: relative;
     display: flex;
     align-items: center;
-    border: 1px solid red;
 }
 #icon{  
     filter: invert();
@@ -70,7 +68,6 @@ body{
     font-size: 6.5vw;
 }
 .datacontainer{
-    border: 1px solid purple;
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
@@ -259,7 +256,6 @@ body{
     border-bottom-right-radius: 20px;
     background-color: var(--colorMain-);
     bottom: 0;
-    border: 1px solid yellow;
 }
 .article{
     margin: 5.5VW;
