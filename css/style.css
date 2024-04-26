@@ -21,7 +21,7 @@ body{
 }
 #background{
     position: absolute;
-    width: 100%;
+    width: 98%;
     top: 0;
     height: 100vh;
 }
@@ -29,6 +29,7 @@ body{
     margin: 2vh;
     display: grid;
     border: 1px solid red;
+    overflow-y: auto;
 }
 .header{
     position: relative;
@@ -40,7 +41,7 @@ body{
     width: 25px;
 }
 #title{
-    font-size: 2vw;
+    font-size: 4vh;
     margin: 2vh;
     font-family: "Bold", sans-serif;
     color: #FFFFFF;
@@ -85,11 +86,11 @@ body{
     color: #FFFFFF;
 }
 #subtitle{
-    margin-top: 3vh;
-    font-size:2.7vw;
+    margin-top: 3.3vh;
+    font-size:3vw;
 }
 #price{
-    font-size:4vw;
+    font-size:4.5vw;
     font-family: "Bold", sans-serif;
     margin-top: 2vh;
     margin-bottom: 1.5vw;
@@ -115,9 +116,75 @@ body{
 .scrollprofile{
     position: absolute;
     bottom: 0;
-    height: 50vh;
-    width: 90%;
+    overflow-y: auto;
+    height: 400px;
+    width: 98%;
     background-color: #FFFFFF;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
+}
+#titlescroll{
+    font-family: "Bold", sans-serif;
+    color: var(--colorMain-);
+    font-size:2.3vh;
+    margin: 3vh;
+    margin-top: 6vh;
+}
+#txt{
+    font-family: "Bold", sans-serif;
+}
+.activities{
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid var(--colorThird-);
+    box-shadow: 0px 0px 10px -4px;
+}
+.scrollactivities{
+    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-top: 6vh;
+}
+.activities{
+    width: 13vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vh;
+}
+#Account{
+    width: 10vh;
+    gap: 10px;
+}
+.scrolltransactions{
+    display: grid;
+}
+#titletransactions{
+    font-family: "Bold", sans-serif;
+    color: var(--colorMain-);
+    font-size:2.3vh;
+    margin: 3vh;
+    margin-top: 6vh;
+}
+#arrow{
+    margin-left: 3vh;
+    width: 9vh;
+}
+.transactions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid purple;
+}
+#titletransactions{
+    font-family: "Bold", sans-serif;
+    align-items: center;
+    color: var(--colorMain-);
+    font-size:2.3vh;
+}
+.numbers{
+    display: flex;
+    width: 20%;
+    border: 1px solid purple;
 }
