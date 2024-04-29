@@ -153,20 +153,19 @@
 .cards{
     width: 42.5vw;
     height: 35vh;
-    border: 1px solid #000000;
     margin: 4vw;
     overflow: hidden;
-    align-items: center;
-    justify-content: center;
     position: relative;
     border-radius: 5vw;
     overflow: hidden;
     transition: 1s;
-    border: 1px solid black;
 }
-.cards:hover{
+.cards:hover,
+.cards:active,
+.cards:focus{
     transform: rotate(12deg);
     filter: invert();
+    border-radius: 5vw !important;
 }
 #background{
     position: absolute;
@@ -206,6 +205,7 @@
     display: grid;
     grid-template-columns: repeat(5,1fr);
     position: absolute;
+    left: 0;
     height: 10vh;
     width: 100%;
     border-bottom-left-radius: 20px;
