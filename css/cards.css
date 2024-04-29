@@ -57,12 +57,10 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
 }
 .information{
     width: 52%;
     height: 24vh;
-    border: 1px solid red;
 }
 #pork{
     margin-top: 9vw;
@@ -141,7 +139,6 @@
     height: 35vh;
     align-items: center;
     position: relative;
-    border: 1px solid red;
     grid-template-columns: repeat(4,1fr);
 }
 .allcards{
