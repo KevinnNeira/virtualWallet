@@ -16,6 +16,10 @@
     font-family: "Medium";
     src: url(/storage/font/SF-Pro-Text-Medium.otf);
 }
+@font-face {
+    font-family: "Semi";
+    src: url(/storage/font/SF-Pro-Text-Semibold.otf);
+}
 
 .gridcontainerMain{
     margin: 2vh;
@@ -68,7 +72,7 @@
     width: 16vh;
 }
 #ellipse{top: 0;
-    width: 25vh;
+    width: 24vh;
     position: absolute;
 }
 #point1{
@@ -90,6 +94,10 @@
     align-items: left;
     justify-content: center;
     border: 1px  solid purple;
+}
+.points:hover{
+    transition: 1s;
+    transform: scale(0.9);
 }
 #question{
     color: #33404F;
@@ -130,7 +138,7 @@
     margin-left: 2vh;
     justify-content: center;
     width: 95%;
-    height: 34vh;
+    height: 35vh;
     align-items: center;
     position: relative;
     border: 1px solid red;
@@ -141,7 +149,7 @@
     position: absolute;
 }
 .cards{
-    width: 48vw;
+    width: 42.5vw;
     height: 30vh;
     border: 1px solid #000000;
     margin: 4vw;
@@ -151,7 +159,12 @@
     position: relative;
     border-radius: 5vw;
     overflow: hidden;
+    transition: 1s;
     border: 1px solid black;
+}
+.cards:hover{
+    transform: rotate(12deg);
+    filter: invert();
 }
 #background{
     position: absolute;
@@ -160,9 +173,31 @@
     background-color: #33404F;
 }
 #chip{
+    margin-top: 3vh;
     margin-left: 3vh;
     width: 2vh;
-    filter: invert();
+    position: absolute;
+}
+#smallnumber{
+    margin-top: 3vh;
+    margin-left: 30vw;
+    position: absolute;
+    color: #FFFFFF;
+    font-family: "Semi", sans-serif;
+    font-size: 2vw;
+}
+#bignumber{
+    margin-top: 13vh;
+    margin-left: 12vw;
+    position: absolute;
+    color: #FFFFFF;
+    font-family: "Semi", sans-serif;
+    font-size: 4vw;
+}
+#masterc{
+    bottom: 3vh;
+    margin-left: 3vh;
+    width: 3vh;
     position: absolute;
 }
 .bar{
