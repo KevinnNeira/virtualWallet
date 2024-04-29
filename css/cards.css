@@ -20,7 +20,6 @@
     font-family: "Semi";
     src: url(storage/font/SF-Pro-Text-Semibold.otf);
 }
-
 .gridcontainerMain{
     margin: 2vh;
     display: grid;
@@ -142,7 +141,7 @@
     margin-left: 2vh;
     justify-content: center;
     width: 95%;
-    height: 35vh;
+    height: 40vh;
     align-items: center;
     position: relative;
     grid-template-columns: repeat(4,1fr);
@@ -153,7 +152,7 @@
 }
 .cards{
     width: 42.5vw;
-    height: 30vh;
+    height: 35vh;
     border: 1px solid #000000;
     margin: 4vw;
     overflow: hidden;
@@ -183,19 +182,19 @@
 }
 #smallnumber{
     margin-top: 3vh;
-    margin-left: 30vw;
+    margin-left: 27vw;
     position: absolute;
     color: #FFFFFF;
     font-family: "Semi", sans-serif;
-    font-size: 2vw;
+    font-size: 3vw;
 }
 #bignumber{
-    margin-top: 13vh;
+    margin-top: 16vh;
     margin-left: 12vw;
     position: absolute;
     color: #FFFFFF;
     font-family: "Semi", sans-serif;
-    font-size: 4vw;
+    font-size: 4.5vw;
 }
 #masterc{
     bottom: 3vh;
@@ -208,7 +207,7 @@
     grid-template-columns: repeat(5,1fr);
     position: absolute;
     height: 10vh;
-    width: 95vw;
+    width: 100%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: var(--colorMain-);

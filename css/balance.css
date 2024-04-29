@@ -2,25 +2,34 @@
 
 @font-face {
     font-family: "Bold";
-    src: url(storage/font/SF-Pro-Text-Bold.otf);
+    src: url(../storage/font/SF-Pro-Text-Bold.otf);
 }
 @font-face {
     font-family: "Heavy";
-    src: url(storage/font/SF-Pro-Text-Heavy.otf);
+    src: url(../storage/font/SF-Pro-Text-Heavy.otf);
 }
 @font-face {
     font-family: "Light";
-    src: url(storage/font/SF-Pro-Text-Light.otf);
+    src: url(../storage/font/SF-Pro-Text-Light.otf);
 }
 @font-face {
     font-family: "Medium";
-    src: url(storage/font/SF-Pro-Text-Medium.otf);
+    src: url(../storage/font/SF-Pro-Text-Medium.otf);
 }
 @font-face {
     font-family: "Semi";
-    src: url(storage/font/SF-Pro-Text-Semibold.otf);
+    src: url(../storage/font/SF-Pro-Text-Semibold.otf);
 }
-
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.gridcontainerMain{
+    margin: 3vh;
+    display: grid;
+    overflow-y: auto;
+}
 .header{
     height: 10vh;
     position: relative;
@@ -28,11 +37,12 @@
     align-items: center;
 }
 #icon{  
+    filter: invert();
     width: 35px;
 }
 #title{
     font-size: 3.5vh;
-    margin-left: 10vh;
+    margin-left: 11vh;
     font-family: "Bold", sans-serif;
     color: #FFFFFF;
 }
@@ -42,5 +52,37 @@
     right: 0;
 }
 #backgroundtop{
+    width:59vh;
     position: absolute;
+}
+.circlebalance{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 60vw;
+    border-radius: 50%;
+    margin-top: 15vh;
+    margin-left: 15vw;
+    background: var(--colorSecond-);
+    position: absolute;
+    z-index: +1;
+}
+#total{
+    font-size: 6vw;
+    font-family: "Heavy", sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 1vw;
+}
+#balance{
+    font-size: 6vw;
+    font-family: "Heavy", sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 1vw;
+}
+#balancenumber{
+    font-size: 6vw;
+    font-family: "Heavy", sans-serif;
+    color: #FFFFFF;
 }
