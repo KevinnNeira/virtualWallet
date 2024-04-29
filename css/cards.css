@@ -91,7 +91,6 @@
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    border: 1px  solid purple;
 }
 .points:hover{
     transition: 1s;
@@ -117,6 +116,10 @@
     background: var(--colorSecond-);
     border: none;
     border-radius: 5vw;
+}
+#button:hover{
+    transition: 1s;
+    transform: rotate(12deg);
 }
 #txt{
     font-family: "Bold", sans-serif;
