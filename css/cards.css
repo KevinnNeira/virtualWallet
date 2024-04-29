@@ -2,23 +2,23 @@
 
 @font-face {
     font-family: "Bold";
-    src: url(/storage/font/SF-Pro-Text-Bold.otf);
+    src: url(storage/font/SF-Pro-Text-Bold.otf);
 }
 @font-face {
     font-family: "Heavy";
-    src: url(/storage/font/SF-Pro-Text-Heavy.otf);
+    src: url(storage/font/SF-Pro-Text-Heavy.otf);
 }
 @font-face {
     font-family: "Light";
-    src: url(/storage/font/SF-Pro-Text-Light.otf);
+    src: url(storage/font/SF-Pro-Text-Light.otf);
 }
 @font-face {
     font-family: "Medium";
-    src: url(/storage/font/SF-Pro-Text-Medium.otf);
+    src: url(storage/font/SF-Pro-Text-Medium.otf);
 }
 @font-face {
     font-family: "Semi";
-    src: url(/storage/font/SF-Pro-Text-Semibold.otf);
+    src: url(storage/font/SF-Pro-Text-Semibold.otf);
 }
 
 .gridcontainerMain{
@@ -116,13 +116,13 @@
     padding: 2.2vw;
     margin-top: 1vh;
     width:  72%;
+    transition: 1s;
     background: var(--colorSecond-);
     border: none;
     border-radius: 5vw;
 }
 #button:hover{
-    transition: 1s;
-    transform: rotate(12deg);
+    transform: rotate(8deg);
 }
 #txt{
     font-family: "Bold", sans-serif;

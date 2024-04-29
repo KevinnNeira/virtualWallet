@@ -1,1 +1,46 @@
 @import url(variables.css);
+
+@font-face {
+    font-family: "Bold";
+    src: url(storage/font/SF-Pro-Text-Bold.otf);
+}
+@font-face {
+    font-family: "Heavy";
+    src: url(storage/font/SF-Pro-Text-Heavy.otf);
+}
+@font-face {
+    font-family: "Light";
+    src: url(storage/font/SF-Pro-Text-Light.otf);
+}
+@font-face {
+    font-family: "Medium";
+    src: url(storage/font/SF-Pro-Text-Medium.otf);
+}
+@font-face {
+    font-family: "Semi";
+    src: url(storage/font/SF-Pro-Text-Semibold.otf);
+}
+
+.header{
+    height: 10vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#icon{  
+    width: 35px;
+}
+#title{
+    font-size: 3.5vh;
+    margin-left: 10vh;
+    font-family: "Bold", sans-serif;
+    color: #FFFFFF;
+}
+#menu{
+    position: absolute;
+    width:35px;
+    right: 0;
+}
+#backgroundtop{
+    position: absolute;
+}
