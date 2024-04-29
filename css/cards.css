@@ -69,7 +69,8 @@
     z-index: +1;
     width: 16vh;
 }
-#ellipse{top: 0;
+#ellipse{
+    top: 0;
     width: 24vh;
     position: absolute;
 }
@@ -92,8 +93,10 @@
     align-items: left;
     justify-content: center;
 }
-.points:hover{
+.points{
     transition: 1s;
+}
+.points:hover{
     transform: scale(0.9);
 }
 #question{
