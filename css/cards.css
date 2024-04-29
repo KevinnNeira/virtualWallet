@@ -160,9 +160,7 @@
     overflow: hidden;
     transition: 1s;
 }
-.cards:hover,
-.cards:active,
-.cards:focus{
+.cards:hover{
     transform: rotate(12deg);
     filter: invert();
     border-radius: 5vw !important;
