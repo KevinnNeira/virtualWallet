@@ -151,7 +151,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    margin-bottom: 27vh;
+}
+.add{
+    display: flex;
+    height: 17vh;
+    width: 100vw;
+    background-color: #E1FFEF;
 }
 #leter{
     font-family: "Medium", sans-serif;
@@ -160,15 +166,44 @@
 .bar{
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    position: absolute;
     left: 0;
     height: 10vh;
     width: 100%;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     background-color: var(--colorMain-);
+}
+.footer{
+    position: fixed;
+    bottom: 0;
 }
 .article{
     margin: 5.5VW;
     width: 5vh;
+}
+#imgcard{
+    margin-left: 4vw;
+    margin-top: 5vh;
+    width: 24vw;
+}
+#titleadd{
+    font-family: "Bold", sans-serif;
+    font-size: 5vw;
+    margin-left: 6vw;
+    margin-top: 6.7vh;
+}
+#txtadd{
+    color: gray;
+    font-family: "Regular", sans-serif;
+    margin-top: 1vw;
+    font-size: 3.5vw;
+    margin-left: 6vw;
+}
+#quit{
+    position: absolute;
+    margin-top: 1.5vh;
+    margin-left: 64vw;
+    width: 7vw;
+    transition: 1s;
+}
+#quit:hover{
+    transform: scale(1.2);
 }

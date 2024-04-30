@@ -20,12 +20,22 @@
     font-family: "Semi";
     src: url(../storage/font/SF-Pro-Text-Semibold.otf);
 }
+body{
+    background-color: black;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 .gridcontainerMain{
-    margin: 2vh;
+    background-color: black;
     display: grid;
     overflow-y: auto;
 }
 .header{
+    margin: 2vh;
+    filter: invert();
     height: 10vh;
     position: relative;
     display: flex;
@@ -48,10 +58,15 @@
     right: 0;
 }
 #title2{
+    margin-left: 2vh;
     font-size: 3vh;
+    color: #FFFFFF;
     font-family: "Bold", sans-serif;
 }
 .containerinformation{
+    margin: 2vh;
+    border-radius: 5vw;
+    border: #33404F;
     display: flex;
     position: relative;
     align-items: center;
@@ -66,6 +81,7 @@
     margin-left: 5vw;
     position: absolute;
     z-index: +1;
+    overflow: hidden;
     width: 16vh;
 }
 #ellipse{
@@ -99,13 +115,14 @@
     transform: scale(0.9);
 }
 #question{
-    color: #33404F;
+    filter: invert();
     margin: 0;
     margin-bottom: 1vh;
     font-size: 2.7vh;
     font-family: "Bold", sans-serif;
 }
 #name{
+    filter: invert();
     font-size: 2.2vh;
     font-family: "Regular", sans-serif;
     color:  gray;
@@ -131,6 +148,7 @@
 }
 #titlecards{
     font-family: "Bold", sans-serif;
+    filter: invert();
     margin: 0;
     margin-left: 2vh;
     font-size: 3vh;
@@ -154,7 +172,6 @@
     width: 42.5vw;
     height: 34vh;
     margin: 4vw;
-    overflow: hidden;
     position: relative;
     border-radius: 5vw;
     overflow: hidden;
@@ -168,8 +185,13 @@
 #background{
     position: absolute;
     height: 100%;
+    background-color: black;
+}
+#background2{
+    position: absolute;
+    height: 100%;
     width: 100%;
-    background-color: #33404F;
+    background-color: black;
 }
 #chip{
     margin-top: 3vh;
@@ -177,7 +199,22 @@
     width: 2vh;
     position: absolute;
 }
+#chip2{
+    filter: invert();
+    margin-top: 3vh;
+    margin-left: 3vh;
+    width: 2vh;
+    position: absolute;
+}
 #smallnumber{
+    margin-top: 3vh;
+    margin-left: 27vw;
+    position: absolute;
+    color: #FFFFFF;
+    font-family: "Semi", sans-serif;
+    font-size: 3vw;
+}
+#smallnumber2{
     margin-top: 3vh;
     margin-left: 27vw;
     position: absolute;
@@ -193,7 +230,21 @@
     font-family: "Semi", sans-serif;
     font-size: 4.5vw;
 }
+#bignumber2{
+    margin-top: 16vh;
+    margin-left: 12vw;
+    position: absolute;
+    font-family: "Semi", sans-serif;
+    font-size: 4.5vw;
+}
 #masterc{
+    bottom: 3vh;
+    margin-left: 3vh;
+    width: 3vh;
+    position: absolute;
+}
+#masterc2{
+    filter: invert();
     bottom: 3vh;
     margin-left: 3vh;
     width: 3vh;
@@ -202,15 +253,23 @@
 .bar{
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    position: absolute;
+    position: fixed;
     left: 0;
     height: 10vh;
     width: 100%;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     background-color: var(--colorMain-);
 }
 .article{
     margin: 5.5VW;
     width: 5vh;
+}
+#quit{
+    position: absolute;
+    margin-top: 2vh;
+    margin-left: 80vw;
+    width: 6vw;
+    transition: 1s;
+}
+#quit:hover{
+    transform: scale(1.2);
 }
