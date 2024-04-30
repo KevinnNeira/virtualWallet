@@ -118,7 +118,7 @@ body{
     bottom: 0;
     overflow-y: auto;
     height: 380px;
-    width: 100%;
+    width: 98%;
     transition: 1s;
     background-color: #FFFFFF;
     border-top-left-radius: 50px;
@@ -158,9 +158,6 @@ body{
     justify-content: center;
     margin-left: 5vh;
     transition: 1s;
-}
-.activities:hover{
-    transform: scale(1.2);
 }
 #Account{
     width: 10vh;
