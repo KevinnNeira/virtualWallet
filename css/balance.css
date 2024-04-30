@@ -157,3 +157,18 @@
     font-family: "Medium", sans-serif;
     margin: 3vh;
 }
+.bar{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    position: absolute;
+    left: 0;
+    height: 10vh;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--colorMain-);
+}
+.article{
+    margin: 5.5VW;
+    width: 5vh;
+}

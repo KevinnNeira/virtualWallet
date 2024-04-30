@@ -2,19 +2,19 @@
 
 @font-face {
     font-family: "Bold";
-    src: url(storage/font/SF-Pro-Text-Bold.otf);
+    src: url(../storage/font/SF-Pro-Text-Bold.otf);
 }
 @font-face {
     font-family: "Heavy";
-    src: url(storage/font/SF-Pro-Text-Heavy.otf);
+    src: url(../storage/font/SF-Pro-Text-Heavy.otf);
 }
 @font-face {
     font-family: "Light";
-    src: url(storage/font/SF-Pro-Text-Light.otf);
+    src: url(../storage/font/SF-Pro-Text-Light.otf);
 }
 @font-face {
     font-family: "Medium";
-    src: url(storage/font/SF-Pro-Text-Medium.otf);
+    src: url(../storage/font/SF-Pro-Text-Medium.otf);
 }
 body{
     background: var(--colorMain-);
@@ -157,6 +157,10 @@ body{
     align-items: center;
     justify-content: center;
     margin-left: 5vh;
+    transition: 1s;
+}
+.activities:hover{
+    transform: scale(1.2);
 }
 #Account{
     width: 10vh;
