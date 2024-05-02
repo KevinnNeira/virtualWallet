@@ -1,2 +1,2 @@
-El respaldo del proyecto se encuentra en una carpeta al mismo nivel del index 
+The project backup is located in a folder at the same level as the index.
 
